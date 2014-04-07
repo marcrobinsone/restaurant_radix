@@ -35,8 +35,6 @@ function restaurant_radix_preprocess_html(&$variables) {
   // Add Bootstrap JS.
   $base = parse_url($base_url);
   drupal_add_js($base['scheme'] . '://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js', 'external');
-
-  drupal_set_message('Lipsum dolor sit amet');
 }
 
 /**
