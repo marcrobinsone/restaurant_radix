@@ -1,9 +1,15 @@
 //
 // Styles for main layout
 // --------------------------------------------------
+
+// Container
+// --------------------------------------------------
 .container {
-  max-width: 970px;
+  max-width: 970px !important; // Change this to make site wider or smaller.
 }
+
+// Header
+// --------------------------------------------------
 .header {
   @include section($gray-lighter, black);
   h1 {
@@ -13,13 +19,43 @@
     margin-bottom: 0;
   }
 }
+body.page-title-hidden {
+  .header {
+    display: none;
+  }
+}
+
+// Top
+// --------------------------------------------------
 .top {
   @include section();
   padding-bottom: 0px;
 }
+
+// Main
+// --------------------------------------------------
 .main {
   @include section();
 }
+body.page-is-panel {
+  .main {
+    padding-top: 0;
+  }
+}
+body.page-is-not-panel {
+  .main {
+    @extend .container;
+  }
+}
+
+// Footer
+// --------------------------------------------------
 .footer {
   @include section($gray-lighter, black);
+}
+
+// Equal height columns
+// --------------------------------------------------
+.col-eh {
+  margin-bottom: 30px;
 }

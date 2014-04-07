@@ -1,3 +1,27 @@
 //
 // Styles for panels and panes.
 // --------------------------------------------------
+
+
+// Layout 1 col
+// --------------------------------------------------
+.layout-1col {
+  .panel-pane-region {
+    @include section();
+    .panel-pane {
+      margin-bottom: 18px;
+    }
+  }
+  .panel-pane-region-header,
+  .panel-pane-region-empty {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+body {
+  &.page-with-region-header {
+    .main {
+      padding-top: 0;
+    }
+  }
+}

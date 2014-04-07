@@ -1,3 +1,18 @@
 //
 // Styles for Nodes
 // --------------------------------------------------
+
+// Blog
+// --------------------------------------------------
+.field-name-field-blog-post-tags {
+  .field-items {
+    .field-item {
+      display: inline-block;
+      margin: 0 0 0 8px;
+      a {
+        @extend .label;
+        @extend .label-default;
+      }
+    }
+  }
+}
