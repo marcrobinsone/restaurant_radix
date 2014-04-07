@@ -11177,9 +11177,10 @@ label {
   padding-top: 60px;
   padding-bottom: 60px;
   padding-bottom: 0px;
+  margin-bottom: -50px;
 }
 
-/* line 17, ../sass/partials/_layout.scss */
+/* line 18, ../sass/partials/_layout.scss */
 .main {
   background-color: white;
   color: #555555;
@@ -11187,7 +11188,7 @@ label {
   padding-bottom: 60px;
 }
 
-/* line 20, ../sass/partials/_layout.scss */
+/* line 21, ../sass/partials/_layout.scss */
 .footer {
   background-color: #eeeeee;
   color: black;
