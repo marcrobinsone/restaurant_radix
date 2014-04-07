@@ -10375,7 +10375,14 @@ ul.nav > li.dropdown:after {
   display: none;
 }
 
-/* line 18, ../../extensions/compass_radix/stylesheets/compass_radix/_panel.scss */
+/* line 16, ../../extensions/compass_radix/stylesheets/compass_radix/_panel.scss */
+.panelizer-view-mode .container, .panelizer-view-mode body.page-is-not-panel .main, body.page-is-not-panel .panelizer-view-mode .main {
+  width: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 25, ../../extensions/compass_radix/stylesheets/compass_radix/_panel.scss */
 div#panels-ipe-control-container {
   width: auto;
   left: 0;
@@ -10383,47 +10390,47 @@ div#panels-ipe-control-container {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 23, ../../extensions/compass_radix/stylesheets/compass_radix/_panel.scss */
+/* line 30, ../../extensions/compass_radix/stylesheets/compass_radix/_panel.scss */
 div#panels-ipe-control-container .panels-ipe-button-container {
   text-align: center;
 }
-/* line 25, ../../extensions/compass_radix/stylesheets/compass_radix/_panel.scss */
+/* line 32, ../../extensions/compass_radix/stylesheets/compass_radix/_panel.scss */
 div#panels-ipe-control-container .panels-ipe-button-container .panels-ipe-pseudobutton-container {
   margin: 0 5px;
 }
-/* line 27, ../../extensions/compass_radix/stylesheets/compass_radix/_panel.scss */
+/* line 34, ../../extensions/compass_radix/stylesheets/compass_radix/_panel.scss */
 div#panels-ipe-control-container .panels-ipe-button-container .panels-ipe-pseudobutton-container a {
   padding: 0px 10px 0px 34px;
 }
-/* line 29, ../../extensions/compass_radix/stylesheets/compass_radix/_panel.scss */
+/* line 36, ../../extensions/compass_radix/stylesheets/compass_radix/_panel.scss */
 div#panels-ipe-control-container .panels-ipe-button-container .panels-ipe-pseudobutton-container a:hover {
   text-decoration: none;
 }
-/* line 37, ../../extensions/compass_radix/stylesheets/compass_radix/_panel.scss */
+/* line 44, ../../extensions/compass_radix/stylesheets/compass_radix/_panel.scss */
 div#panels-ipe-control-container .panels-ipe-form-container form > div {
   text-align: center;
 }
-/* line 40, ../../extensions/compass_radix/stylesheets/compass_radix/_panel.scss */
+/* line 47, ../../extensions/compass_radix/stylesheets/compass_radix/_panel.scss */
 div#panels-ipe-control-container .panels-ipe-form-container form .form-submit {
   margin: 0 5px;
   padding: 0px 10px 0px 34px;
 }
-/* line 43, ../../extensions/compass_radix/stylesheets/compass_radix/_panel.scss */
+/* line 50, ../../extensions/compass_radix/stylesheets/compass_radix/_panel.scss */
 div#panels-ipe-control-container .panels-ipe-form-container form .form-submit:hover {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 
-/* line 51, ../../extensions/compass_radix/stylesheets/compass_radix/_panel.scss */
+/* line 58, ../../extensions/compass_radix/stylesheets/compass_radix/_panel.scss */
 ul.panels-ipe-linkbar {
   list-style: none outside none;
 }
-/* line 53, ../../extensions/compass_radix/stylesheets/compass_radix/_panel.scss */
+/* line 60, ../../extensions/compass_radix/stylesheets/compass_radix/_panel.scss */
 ul.panels-ipe-linkbar > li {
   display: inline-block;
   margin: 0 0 0 5px;
 }
-/* line 56, ../../extensions/compass_radix/stylesheets/compass_radix/_panel.scss */
+/* line 63, ../../extensions/compass_radix/stylesheets/compass_radix/_panel.scss */
 ul.panels-ipe-linkbar > li a {
   margin: 0 !important;
 }
@@ -11261,23 +11268,38 @@ body.page-is-panel .main {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-/* line 11, ../sass/partials/_panel.scss */
-.layout-1col .panel-pane-region .panel-pane {
-  margin-bottom: 18px;
-}
-/* line 15, ../sass/partials/_panel.scss */
+/* line 12, ../sass/partials/_panel.scss */
 .layout-1col .panel-pane-region-header,
 .layout-1col .panel-pane-region-empty {
   padding-top: 0;
   padding-bottom: 0;
 }
 
-/* line 23, ../sass/partials/_panel.scss */
+/* line 20, ../sass/partials/_panel.scss */
 body.page-with-region-header .main {
   padding-top: 0;
 }
 
-/* line 9, ../sass/partials/_node.scss */
+/* line 8, ../sass/partials/_view.scss */
+.view .view-header {
+  margin-bottom: 18px;
+}
+/* line 11, ../sass/partials/_view.scss */
+.view .view-footer {
+  margin-top: 18px;
+}
+
+/* line 7, ../sass/partials/_node.scss */
+.node-featured .pane-node-title .pane-content a {
+  font-size: inherit;
+}
+
+/* line 15, ../sass/partials/_node.scss */
+.node-type-blog-post .panel-pane-region .panel-pane {
+  margin-bottom: 18px;
+}
+
+/* line 22, ../sass/partials/_node.scss */
 .field-name-field-blog-post-tags .field-items .field-item {
   display: inline-block;
   margin: 0 0 0 8px;

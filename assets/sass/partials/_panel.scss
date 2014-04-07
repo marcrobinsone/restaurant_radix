@@ -8,9 +8,6 @@
 .layout-1col {
   .panel-pane-region {
     @include section();
-    .panel-pane {
-      margin-bottom: 18px;
-    }
   }
   .panel-pane-region-header,
   .panel-pane-region-empty {

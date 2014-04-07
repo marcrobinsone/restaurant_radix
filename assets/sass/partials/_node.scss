@@ -2,8 +2,21 @@
 // Styles for Nodes
 // --------------------------------------------------
 
+// General
+// --------------------------------------------------
+.node-featured .pane-node-title .pane-content a {
+  font-size: inherit;
+}
+
 // Blog
 // --------------------------------------------------
+.node-type-blog-post {
+  .panel-pane-region {
+    .panel-pane {
+      margin-bottom: 18px;
+    }
+  }
+}
 .field-name-field-blog-post-tags {
   .field-items {
     .field-item {
