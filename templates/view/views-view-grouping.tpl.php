@@ -18,7 +18,7 @@
  */
 ?>
 <div class="view-grouping col-md-12">
-  <div class="view-grouping-header"><?php print $title; ?></div>
+  <h2 class="view-grouping-header"><?php print $title; ?></h2>
   <div class="view-grouping-content row">
     <?php print $content; ?>
   </div>

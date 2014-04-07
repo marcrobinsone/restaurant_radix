@@ -9,7 +9,7 @@
 ?>
 <div class="col-md-12 menu-category">
   <?php if (!empty($title)): ?>
-    <h1 class="menu-category-title"><?php print $title; ?></h1>
+    <p class="lead"><?php print $title; ?></p>
   <?php endif; ?>
   <div class="row">
     <?php foreach ($rows as $id => $row): ?>

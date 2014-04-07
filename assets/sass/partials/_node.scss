@@ -29,3 +29,38 @@
     }
   }
 }
+
+// Menu
+// --------------------------------------------------
+.node-menu {
+  @extend .thumbnail;
+  padding-bottom: 15px !important;
+  .panel-pane {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .pane-node-field-menu-images {
+    padding-left: 0;
+    padding-right: 0;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .pane-node-read-more {
+    .btn {
+      display: block;
+    }
+  }
+}
+.field-collection-item-field-menu-types {
+  .content {
+    @include clearfix();
+  }
+  .field-name-field-menu-type {
+    float: left;
+  }
+  .field-name-field-menu-price {
+    float: right;
+  }
+}

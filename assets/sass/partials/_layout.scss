@@ -29,6 +29,7 @@ body.page-header-hidden {
 // --------------------------------------------------
 .top {
   @include section();
+  padding-top: 20px;
   padding-bottom: 0px;
 }
 body.page-top-hidden {
