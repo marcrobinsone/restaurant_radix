@@ -13,7 +13,9 @@
     });
 
     // Equal height for .row-eh and .col-eh
-    $('.row-eh, .col-eh').eh();
+    $('body').imagesLoaded(function() {
+      $('.row-eh, .col-eh').eh();
+    });
   });
 
   // Sets all el to equal height.
