@@ -1,6 +1,9 @@
 //
 // Styles for main layout
 // --------------------------------------------------
+.container {
+  max-width: 970px;
+}
 .header {
   @include section($gray-lighter, black);
   h1 {

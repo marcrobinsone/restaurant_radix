@@ -11156,13 +11156,18 @@ label {
 }
 
 /* line 4, ../sass/partials/_layout.scss */
+.container {
+  max-width: 970px;
+}
+
+/* line 7, ../sass/partials/_layout.scss */
 .header {
   background-color: #eeeeee;
   color: black;
   padding-top: 60px;
   padding-bottom: 60px;
 }
-/* line 6, ../sass/partials/_layout.scss */
+/* line 9, ../sass/partials/_layout.scss */
 .header h1 {
   font-size: 60px;
   line-height: 1;
@@ -11170,7 +11175,7 @@ label {
   margin-bottom: 0;
 }
 
-/* line 13, ../sass/partials/_layout.scss */
+/* line 16, ../sass/partials/_layout.scss */
 .top {
   background-color: white;
   color: #555555;
@@ -11180,7 +11185,7 @@ label {
   margin-bottom: -50px;
 }
 
-/* line 18, ../sass/partials/_layout.scss */
+/* line 21, ../sass/partials/_layout.scss */
 .main {
   background-color: white;
   color: #555555;
@@ -11188,7 +11193,7 @@ label {
   padding-bottom: 60px;
 }
 
-/* line 21, ../sass/partials/_layout.scss */
+/* line 24, ../sass/partials/_layout.scss */
 .footer {
   background-color: #eeeeee;
   color: black;
