@@ -1,3 +1,22 @@
 //
 // Styles for main layout
 // --------------------------------------------------
+.header {
+  @include section($gray-lighter, black);
+  h1 {
+    font-size: 60px;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+.top {
+  @include section();
+  padding-bottom: 0px;
+}
+.main {
+  @include section();
+}
+.footer {
+  @include section($gray-lighter, black);
+}
