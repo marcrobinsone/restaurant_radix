@@ -5,5 +5,16 @@
 // Page header
 // --------------------------------------------------
 .pane-bundle-page-banner {
-  
+  .jumbotron {
+    border: 0;
+    @include box-shadow(none);
+  }
+}
+.field-name-field-page-banner-links {
+  .field-items {
+    .field-item {
+      display: inline-block;
+      margin: 0 10px 0 0;
+    }
+  }
 }

@@ -11207,7 +11207,7 @@ label {
 }
 
 /* line 23, ../sass/partials/_layout.scss */
-body.page-title-hidden .header {
+body.page-header-hidden .header {
   display: none;
 }
 
@@ -11220,7 +11220,12 @@ body.page-title-hidden .header {
   padding-bottom: 0px;
 }
 
-/* line 37, ../sass/partials/_layout.scss */
+/* line 35, ../sass/partials/_layout.scss */
+body.page-top-hidden .top {
+  display: none;
+}
+
+/* line 42, ../sass/partials/_layout.scss */
 .main {
   background-color: white;
   color: #555555;
@@ -11228,12 +11233,12 @@ body.page-title-hidden .header {
   padding-bottom: 60px;
 }
 
-/* line 41, ../sass/partials/_layout.scss */
+/* line 46, ../sass/partials/_layout.scss */
 body.page-is-panel .main {
   padding-top: 0;
 }
 
-/* line 53, ../sass/partials/_layout.scss */
+/* line 58, ../sass/partials/_layout.scss */
 .footer {
   background-color: #eeeeee;
   color: black;
@@ -11241,7 +11246,7 @@ body.page-is-panel .main {
   padding-bottom: 60px;
 }
 
-/* line 59, ../sass/partials/_layout.scss */
+/* line 64, ../sass/partials/_layout.scss */
 .col-eh {
   margin-bottom: 30px;
 }
@@ -11269,15 +11274,35 @@ body.page-is-panel .main {
   padding-bottom: 60px;
 }
 /* line 12, ../sass/partials/_panel.scss */
+.layout-1col .panel-pane-region-full-width {
+  background-color: #eeeeee;
+  color: black;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+/* line 15, ../sass/partials/_panel.scss */
 .layout-1col .panel-pane-region-header,
 .layout-1col .panel-pane-region-empty {
   padding-top: 0;
   padding-bottom: 0;
 }
 
-/* line 20, ../sass/partials/_panel.scss */
+/* line 23, ../sass/partials/_panel.scss */
 body.page-with-region-header .main {
   padding-top: 0;
+}
+
+/* line 8, ../sass/partials/_widget.scss */
+.pane-bundle-page-banner .jumbotron {
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 15, ../sass/partials/_widget.scss */
+.field-name-field-page-banner-links .field-items .field-item {
+  display: inline-block;
+  margin: 0 10px 0 0;
 }
 
 /* line 8, ../sass/partials/_view.scss */

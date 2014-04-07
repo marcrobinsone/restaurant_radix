@@ -9,6 +9,9 @@
   .panel-pane-region {
     @include section();
   }
+  .panel-pane-region-full-width {
+    @include section($gray-lighter, black);
+  }
   .panel-pane-region-header,
   .panel-pane-region-empty {
     padding-top: 0;

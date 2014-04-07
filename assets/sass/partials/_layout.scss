@@ -19,7 +19,7 @@
     margin-bottom: 0;
   }
 }
-body.page-title-hidden {
+body.page-header-hidden {
   .header {
     display: none;
   }
@@ -30,6 +30,11 @@ body.page-title-hidden {
 .top {
   @include section();
   padding-bottom: 0px;
+}
+body.page-top-hidden {
+  .top {
+    display: none;
+  }
 }
 
 // Main
