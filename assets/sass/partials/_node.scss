@@ -53,6 +53,13 @@
     }
   }
 }
+.node-type-menu {
+  .panel-pane-region {
+    .panel-pane {
+      margin-bottom: 18px;
+    }
+  }
+}
 .field-collection-item-field-menu-types {
   .content {
     @include clearfix();
@@ -62,5 +69,12 @@
   }
   .field-name-field-menu-price {
     float: right;
+  }
+}
+.field-name-field-menu-images {
+  .field-items {
+    .field-item {
+      margin-bottom: 18px;
+    }
   }
 }

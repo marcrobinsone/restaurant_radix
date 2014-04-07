@@ -11,13 +11,6 @@
 // Header
 // --------------------------------------------------
 .header {
-  @include section($gray-lighter, black);
-  h1 {
-    font-size: 60px;
-    line-height: 1;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
 }
 body.page-header-hidden {
   .header {
@@ -29,7 +22,7 @@ body.page-header-hidden {
 // --------------------------------------------------
 .top {
   @include section();
-  padding-top: 20px;
+  padding-top: 0px;
   padding-bottom: 0px;
 }
 body.page-top-hidden {

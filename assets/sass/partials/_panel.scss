@@ -5,9 +5,12 @@
 
 // Layout 1 col
 // --------------------------------------------------
-.layout-1col {
+.layout-1col,
+.layout-2col {
   .panel-pane-region {
     @include section();
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .panel-pane-region-full-width {
     @include section($gray-lighter, black);
