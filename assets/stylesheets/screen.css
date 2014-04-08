@@ -11090,6 +11090,11 @@ label {
   border-width: 0 1px 4px 1px;
 }
 
+/* line 8, ../sass/global/_font.scss */
+address i {
+  margin-right: 10px;
+}
+
 /* line 7, ../sass/partials/_layout.scss */
 .container, body.page-is-not-panel .main {
   max-width: 970px !important;
@@ -11215,9 +11220,26 @@ body.page-with-region-header .main {
 .view .view-header {
   margin-bottom: 18px;
 }
-/* line 11, ../sass/partials/_view.scss */
+/* line 10, ../sass/partials/_view.scss */
+.view .view-header h1, .view .view-header h2, .view .view-header h3 {
+  margin-top: 0;
+}
+/* line 14, ../sass/partials/_view.scss */
+.view .view-header p.lead:last-child {
+  margin-bottom: 0;
+}
+/* line 19, ../sass/partials/_view.scss */
 .view .view-footer {
   margin-top: 18px;
+}
+
+/* line 27, ../sass/partials/_view.scss */
+.view-display-id-featured_menus .views-row {
+  margin-bottom: 10px;
+}
+/* line 30, ../sass/partials/_view.scss */
+.view-display-id-featured_menus .views-row-odd {
+  clear: left;
 }
 
 /* line 7, ../sass/partials/_node.scss */
