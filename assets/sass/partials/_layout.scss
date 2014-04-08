@@ -50,7 +50,9 @@ body.page-is-not-panel {
 // Footer
 // --------------------------------------------------
 .footer {
-  @include section($gray-lighter, black);
+  @include section(transparent, $text-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 // Equal height columns

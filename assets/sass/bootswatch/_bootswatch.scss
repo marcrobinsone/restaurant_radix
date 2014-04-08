@@ -1,376 +1,136 @@
-// Lumen 3.1.1
+// Amelia 3.0.0
 // Bootswatch
 // -----------------------------------------------------
 
-@import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic");
-@import "./variables";
-
-@mixin shadow ($width: 4px) {
-  border-width: 0 1px $width 1px;
-}
+@import url("//fonts.googleapis.com/css?family=Lobster|Cabin:400,700");
 
 // Navbar =====================================================================
 
-.navbar  {
-  @include shadow();
+.navbar-brand {
+        font-family: 'Lobster', cursive;
 }
 
 // Buttons ====================================================================
 
 .btn {
-  padding: 8px $padding-base-horizontal 7px;
-  @include shadow();
-  font-size: 12px;
-  font-weight: bold;
-  text-transform: uppercase;
 
-  &:hover {
-    margin-top: 1px;
-    border-bottom-width: 3px;
-  }
+	.caret {
+		border-top-color: #fff;
+	}
+}
 
-  &:active {
-    margin-top: 2px;
-    border-bottom-width: 2px;
-    @include box-shadow(none);
-  }
+.btn-default {
 
-  &.btn-lg,
-  &.btn-group-lg > .btn {
-    padding: 14px $padding-large-horizontal 13px;
-    line-height: 15px;
-  }
+	&:hover {
+		color: $btn-default-color;
+	}
 
-  &.btn-sm,
-  &.btn-group-sm > .btn {
-    padding: 4px $padding-small-horizontal;
-  }
-
-  &.btn-xs,
-  &.btn-group-xs > .btn {
-    padding: $padding-xs-vertical $padding-xs-horizontal;
-  }
-
-  &.btn-default:hover,
-  &.btn-default:focus,
-  &.btn-group.open .dropdown-toggle.btn-default {
-    background-color: $btn-default-bg;
-    border-color: $btn-default-border;
-  }
-
-  &.btn-primary:hover,
-  &.btn-primary:focus,
-  &.btn-group.open .dropdown-toggle.btn-primary {
-    background-color: $btn-primary-bg;
-    border-color: $btn-primary-border;
-  }
-
-  &.btn-success:hover,
-  &.btn-success:focus,
-  &.btn-group.open .dropdown-toggle.btn-success {
-    background-color: $btn-success-bg;
-    border-color: $btn-success-border;
-  }
-
-  &.btn-info:hover,
-  &.btn-info:focus,
-  &.btn-group.open .dropdown-toggle.btn-info {
-    background-color: $btn-info-bg;
-    border-color: $btn-info-border;
-  }
-
-  &.btn-warning:hover,
-  &.btn-warning:focus,
-  &.btn-group.open .dropdown-toggle.btn-warning {
-    background-color: $btn-warning-bg;
-    border-color: $btn-warning-border;
-  }
-
-  &.btn-danger:hover,
-  &.btn-danger:focus,
-  &.btn-group.open .dropdown-toggle.btn-danger {
-    background-color: $btn-danger-bg;
-    border-color: $btn-danger-border;
-  }
-
-  &.btn-group.open .dropdown-toggle {
-    @include box-shadow(none);
-  }
+	.caret {
+		border-top-color: $btn-default-color;
+	}
 }
 
 // Typography =================================================================
 
-.text-primary,
-.text-primary:hover {
-  color: $brand-primary;
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Lobster', cursive;
 }
 
-.text-success,
-.text-success:hover {
-  color: $brand-success;
+.text-primary {
+	color: lighten($brand-primary, 40%);
 }
 
-.text-danger,
-.text-danger:hover {
-  color: $brand-danger;
+.text-success {
+	color: lighten($brand-success, 20%);
 }
 
-.text-warning,
-.text-warning:hover {
-  color: $brand-warning;
+.text-danger {
+	color: lighten($brand-danger, 20%);
 }
 
-.text-info,
-.text-info:hover {
-  color: $brand-info;
+.text-warning {
+	color: lighten($brand-warning, 20%);
+}
+
+.text-info {
+	color: lighten($brand-info, 40%);
 }
 
 // Tables =====================================================================
 
-table,
-.table {
-
-  a {
-    text-decoration: underline;
-  }
-
-  .success,
-  .warning,
-  .danger,
-  .info {
-    color: #fff;
-
-    a {
-      color: #fff;
-    }
-  }
-
-  > thead > tr > th,
-  > tbody > tr > th,
-  > tfoot > tr > th,
-  > thead > tr > td,
-  > tbody > tr > td,
-  > tfoot > tr > td {
-    border-color: transparent;
-  }
-}
-
 // Forms ======================================================================
 
-.form-control {
-  @include box-shadow(inset 0 2px 0 rgba(0, 0, 0, 0.075));
-}
-
-label {
-  font-weight: normal;
-}
-
 .has-warning {
-  .help-block,
-  .control-label {
-    color: $brand-warning;
-  }
+	.help-block,
+	.control-label {
+		color: lighten($brand-warning, 20%);
+	}
 
-  .form-control,
-  .form-control:focus {
-    border: 1px solid $brand-warning;
-    @include box-shadow(inset 0 2px 0 rgba(0, 0, 0, 0.075));
-  }
+	.form-control,
+	.form-control:focus {
+		border-color: lighten($brand-warning, 20%);
+	}
 }
 
 .has-error {
-  .help-block,
-  .control-label {
-    color: $brand-danger;
-  }
+	.help-block,
+	.control-label {
+		color: lighten($brand-primary, 40%);
+	}
 
-  .form-control,
-  .form-control:focus {
-    border: 1px solid $brand-danger;
-    @include box-shadow(inset 0 2px 0 rgba(0, 0, 0, 0.075));
-  }
+	.form-control,
+	.form-control:focus {
+		border-color: lighten($brand-primary, 40%);
+	}
 }
 
 .has-success {
-  .help-block,
-  .control-label {
-    color: $brand-success;
-  }
+	.help-block,
+	.control-label {
+		color: lighten($brand-success, 20%);
+	}
 
-  .form-control,
-  .form-control:focus {
-    border: 1px solid $brand-success;
-    @include box-shadow(inset 0 2px 0 rgba(0, 0, 0, 0.075));
-  }
+	.form-control,
+	.form-control:focus {
+		border-color: lighten($brand-success, 20%);
+	}
+}
+
+legend {
+	font-family: 'Lobster', cursive;
+	color: #fff;
+}
+
+.input-group-addon {
+	color: $btn-default-color;
 }
 
 // Navs =======================================================================
 
-.nav {
-  .open > a,
-  .open > a:hover,
-  .open > a:focus {
-    border-color: transparent;
-  }
-}
+.pagination {
 
-.nav-tabs {
-
-  > li > a {
-    margin-top: 6px;
-    border-color: $navbar-default-border;
-    color: $gray-dark;
-    @include transition(all 0.2s ease-in-out);
-  }
-
-  > li > a:hover,
-  > li > a:focus,
-  > li.active > a,
-  > li.active > a:hover,
-  > li.active > a:focus,
-  .open > a,
-  .open > a:hover,
-  .open > a:focus {
-    padding-top: $padding-large-vertical + 3px;
-    padding-bottom: $padding-large-vertical + 3px;
-    margin-top: 0;
-  }
-
-  .open > a,
-  .open > a:hover,
-  .open > a:focus {
-    border-color: $navbar-default-border;
-  }
-
-  > li.disabled > a:hover,
-  > li.disabled > a:focus {
-    padding-top: $padding-large-vertical;
-    padding-bottom: $padding-large-vertical;
-    margin-top: 6px;
-  }
-}
-
-.dropdown-menu {
-  margin-top: 0;
-  @include shadow();
-  border-top-width: 1px;
-  @include box-shadow(none);
-}
-
-.breadcrumb {
-  border-color: darken($breadcrumb-bg, 5%);
-  border-style: solid;
-  @include shadow();
-}
-
-.pagination,
-.pager {
-
-  > li > a,
-  > li > span {
-    position: relative;
-    top: 0;
-    @include shadow();
-    color: $pagination-color;
-    font-size: 12px;
-    font-weight: bold;
-    text-transform: uppercase;
-
-    &:hover {
-      top: 1px;
-      border-bottom-width: 3px;
-    }
-
-    &:active {
-      top: 2px;
-      border-bottom-width: 2px;
-    }
-  }
-
-  > .disabled > a,
-  > .disabled > span {
-
-    &:hover {
-      top: 0;
-      @include shadow();
-    }
-
-    &:active {
-      top: 0;
-      @include shadow();
-    }
-  }
+	a:hover {
+		color: #fff;
+	}
 }
 
 .pager {
 
-  > li > a,
-  > li > span,
-  > .disabled > a,
-  > .disabled > span {
-
-    &,
-    &:hover,
-    &:active {
-      border-left-width: 2px;
-      border-right-width: 2px;
-    }
-  }
+	a:hover {
+		color: #fff;
+	}
 }
 
 // Indicators =================================================================
 
-.alert {
-  @include shadow();
-
-  a,
-  .alert-link {
-    font-weight: normal;
-    color: #fff;
-    text-decoration: underline;
-  }
-
-  .close {
-    color: #fff;
-    text-decoration: none;
-    opacity: 0.4;
-
-    &:hover,
-    &:focus {
-      color: #fff;
-      opacity: 1;
-    }
-  }
-}
-
-.label {
-  font-weight: normal;
-}
-
 // Progress bars ==============================================================
-
-.progress {
-  border: 1px solid $navbar-default-border;
-  @include box-shadow(inset 0 2px 0 rgba(0, 0, 0, 0.1));
-
-  &.progress-bar {
-    @include box-shadow(inset 0 -4px 0 rgba(0, 0, 0, 0.15));
-  }
-}
 
 // Containers =================================================================
 
-.well {
-  border: 1px solid $navbar-default-border;
-  @include box-shadow(inset 0 2px 0 rgba(0, 0, 0, 0.05));
+.list-group-item {
+	background-color: lighten($body-bg, 5%);
 }
 
-.jumbotron {
-  border: 1px solid $navbar-default-border;
-  @include box-shadow(inset 0 2px 0 rgba(0, 0, 0, 0.05));
-}
-
-.panel {
-  border: 1px solid $navbar-default-border;
-  @include shadow();
+.popover {
+	color: $gray-dark;
 }
