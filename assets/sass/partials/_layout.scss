@@ -50,7 +50,7 @@ body.page-is-not-panel {
 // Footer
 // --------------------------------------------------
 .footer {
-  @include section(transparent, $text-color);
+  @include section($navbar-default-border, $text-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }

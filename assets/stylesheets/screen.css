@@ -10217,7 +10217,7 @@ ul.nav > li.dropdown:after {
   font-size: 1.2em;
   text-align: left;
   font-weight: 700;
-  color: #158cba;
+  color: #555555;
 }
 /* line 36, ../../extensions/compass_radix/stylesheets/compass_radix/_menu.scss */
 .nav-expanded > li > a:hover, .nav-expanded > li > a:focus, .nav-expanded > li > a.active, .nav-expanded > li > a.active-trail {
@@ -10241,7 +10241,7 @@ ul.nav > li.dropdown:after {
 /* line 51, ../../extensions/compass_radix/stylesheets/compass_radix/_menu.scss */
 .nav-expanded > li ul.dropdown-menu li a {
   padding: 3px 15px;
-  color: #158cba;
+  color: #555555;
 }
 /* line 54, ../../extensions/compass_radix/stylesheets/compass_radix/_menu.scss */
 .nav-expanded > li ul.dropdown-menu li a:hover, .nav-expanded > li ul.dropdown-menu li a:focus, .nav-expanded > li ul.dropdown-menu li a.active, .nav-expanded > li ul.dropdown-menu li a.active-trail {
@@ -10261,7 +10261,7 @@ ul.nav > li.dropdown:after {
 }
 /* line 69, ../../extensions/compass_radix/stylesheets/compass_radix/_menu.scss */
 .nav-expanded > li.open > a {
-  color: #158cba;
+  color: #555555;
   background: none;
 }
 /* line 72, ../../extensions/compass_radix/stylesheets/compass_radix/_menu.scss */
@@ -11136,7 +11136,7 @@ body.page-is-panel .main {
 
 /* line 52, ../sass/partials/_layout.scss */
 .footer {
-  background-color: transparent;
+  background-color: #e7e7e7;
   color: #555555;
   padding-top: 20px;
   padding-bottom: 20px;
