@@ -78,3 +78,29 @@
     }
   }
 }
+
+// Event
+// --------------------------------------------------
+.node-event {
+  .pane-node-body {
+    margin-top: 10px;
+  }
+}
+#event-node {
+  .panel-pane {
+    margin-bottom: 18px;
+  }
+  .pane-node-field-event-featured-image {
+    // @extend .col-md-3;
+    padding-left: 0;
+  }
+  .pane-node-field-event-date {
+    // @extend .col-md-5;
+  }
+  .pane-node-field-event-location {
+    // @extend .col-md-4;
+  }
+  .pane-node-body {
+    clear: left;
+  }
+}

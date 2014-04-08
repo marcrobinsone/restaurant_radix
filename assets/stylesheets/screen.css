@@ -382,8 +382,9 @@ th {
   }
 
   /* line 95, ../../../../../../../../.rvm/rubies/ruby-2.1.1/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_print.scss */
-  .table-bordered th,
-  .table-bordered td {
+  .table-bordered th, .calendar-calendar table.mini th,
+  .table-bordered td,
+  .calendar-calendar table.mini td {
     border: 1px solid #ddd !important;
   }
 }
@@ -1057,7 +1058,7 @@ pre code {
 }
 
 /* line 798, ../../../../../../../../.rvm/rubies/ruby-2.1.1/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .view .row > .list-group, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .calendar-calendar, .view .row > .list-group, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -1587,7 +1588,7 @@ pre code {
 }
 @media (min-width: 992px) {
   /* line 817, ../../../../../../../../.rvm/rubies/ruby-2.1.1/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .view .row > .list-group {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .calendar-calendar, .view .row > .list-group {
     float: left;
   }
 
@@ -1647,7 +1648,7 @@ pre code {
   }
 
   /* line 825, ../../../../../../../../.rvm/rubies/ruby-2.1.1/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
-  .col-md-12, .view .row > .list-group {
+  .col-md-12, .calendar-calendar, .view .row > .list-group {
     width: 100%;
   }
 
@@ -2169,21 +2170,27 @@ th {
 }
 
 /* line 82, ../../../../../../../../.rvm/rubies/ruby-2.1.1/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_tables.scss */
-.table-bordered {
+.table-bordered, .calendar-calendar table.mini {
   border: 1px solid #dddddd;
 }
 /* line 88, ../../../../../../../../.rvm/rubies/ruby-2.1.1/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_tables.scss */
-.table-bordered > thead > tr > th,
+.table-bordered > thead > tr > th, .calendar-calendar table.mini > thead > tr > th,
 .table-bordered > thead > tr > td,
+.calendar-calendar table.mini > thead > tr > td,
 .table-bordered > tbody > tr > th,
+.calendar-calendar table.mini > tbody > tr > th,
 .table-bordered > tbody > tr > td,
+.calendar-calendar table.mini > tbody > tr > td,
 .table-bordered > tfoot > tr > th,
-.table-bordered > tfoot > tr > td {
+.calendar-calendar table.mini > tfoot > tr > th,
+.table-bordered > tfoot > tr > td,
+.calendar-calendar table.mini > tfoot > tr > td {
   border: 1px solid #dddddd;
 }
 /* line 95, ../../../../../../../../.rvm/rubies/ruby-2.1.1/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_tables.scss */
-.table-bordered > thead > tr > th,
-.table-bordered > thead > tr > td {
+.table-bordered > thead > tr > th, .calendar-calendar table.mini > thead > tr > th,
+.table-bordered > thead > tr > td,
+.calendar-calendar table.mini > thead > tr > td {
   border-bottom-width: 2px;
 }
 
@@ -2339,32 +2346,45 @@ table th[class*="col-"] {
     white-space: nowrap;
   }
   /* line 199, ../../../../../../../../.rvm/rubies/ruby-2.1.1/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_tables.scss */
-  .table-responsive > .table-bordered {
+  .table-responsive > .table-bordered, .calendar-calendar .table-responsive > table.mini {
     border: 0;
   }
   /* line 207, ../../../../../../../../.rvm/rubies/ruby-2.1.1/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_tables.scss */
-  .table-responsive > .table-bordered > thead > tr > th:first-child,
+  .table-responsive > .table-bordered > thead > tr > th:first-child, .calendar-calendar .table-responsive > table.mini > thead > tr > th:first-child,
   .table-responsive > .table-bordered > thead > tr > td:first-child,
+  .calendar-calendar .table-responsive > table.mini > thead > tr > td:first-child,
   .table-responsive > .table-bordered > tbody > tr > th:first-child,
+  .calendar-calendar .table-responsive > table.mini > tbody > tr > th:first-child,
   .table-responsive > .table-bordered > tbody > tr > td:first-child,
+  .calendar-calendar .table-responsive > table.mini > tbody > tr > td:first-child,
   .table-responsive > .table-bordered > tfoot > tr > th:first-child,
-  .table-responsive > .table-bordered > tfoot > tr > td:first-child {
+  .calendar-calendar .table-responsive > table.mini > tfoot > tr > th:first-child,
+  .table-responsive > .table-bordered > tfoot > tr > td:first-child,
+  .calendar-calendar .table-responsive > table.mini > tfoot > tr > td:first-child {
     border-left: 0;
   }
   /* line 211, ../../../../../../../../.rvm/rubies/ruby-2.1.1/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_tables.scss */
-  .table-responsive > .table-bordered > thead > tr > th:last-child,
+  .table-responsive > .table-bordered > thead > tr > th:last-child, .calendar-calendar .table-responsive > table.mini > thead > tr > th:last-child,
   .table-responsive > .table-bordered > thead > tr > td:last-child,
+  .calendar-calendar .table-responsive > table.mini > thead > tr > td:last-child,
   .table-responsive > .table-bordered > tbody > tr > th:last-child,
+  .calendar-calendar .table-responsive > table.mini > tbody > tr > th:last-child,
   .table-responsive > .table-bordered > tbody > tr > td:last-child,
+  .calendar-calendar .table-responsive > table.mini > tbody > tr > td:last-child,
   .table-responsive > .table-bordered > tfoot > tr > th:last-child,
-  .table-responsive > .table-bordered > tfoot > tr > td:last-child {
+  .calendar-calendar .table-responsive > table.mini > tfoot > tr > th:last-child,
+  .table-responsive > .table-bordered > tfoot > tr > td:last-child,
+  .calendar-calendar .table-responsive > table.mini > tfoot > tr > td:last-child {
     border-right: 0;
   }
   /* line 224, ../../../../../../../../.rvm/rubies/ruby-2.1.1/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_tables.scss */
-  .table-responsive > .table-bordered > tbody > tr:last-child > th,
+  .table-responsive > .table-bordered > tbody > tr:last-child > th, .calendar-calendar .table-responsive > table.mini > tbody > tr:last-child > th,
   .table-responsive > .table-bordered > tbody > tr:last-child > td,
+  .calendar-calendar .table-responsive > table.mini > tbody > tr:last-child > td,
   .table-responsive > .table-bordered > tfoot > tr:last-child > th,
-  .table-responsive > .table-bordered > tfoot > tr:last-child > td {
+  .calendar-calendar .table-responsive > table.mini > tfoot > tr:last-child > th,
+  .table-responsive > .table-bordered > tfoot > tr:last-child > td,
+  .calendar-calendar .table-responsive > table.mini > tfoot > tr:last-child > td {
     border-bottom: 0;
   }
 }
@@ -6505,60 +6525,97 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   border-top: 0;
 }
 /* line 147, ../../../../../../../../.rvm/rubies/ruby-2.1.1/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_panels.scss */
-.panel > .table-bordered,
-.panel > .table-responsive > .table-bordered {
+.panel > .table-bordered, .calendar-calendar .panel > table.mini,
+.panel > .table-responsive > .table-bordered,
+.calendar-calendar .panel > .table-responsive > table.mini {
   border: 0;
 }
 /* line 154, ../../../../../../../../.rvm/rubies/ruby-2.1.1/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_panels.scss */
-.panel > .table-bordered > thead > tr > th:first-child,
+.panel > .table-bordered > thead > tr > th:first-child, .calendar-calendar .panel > table.mini > thead > tr > th:first-child,
 .panel > .table-bordered > thead > tr > td:first-child,
+.calendar-calendar .panel > table.mini > thead > tr > td:first-child,
 .panel > .table-bordered > tbody > tr > th:first-child,
+.calendar-calendar .panel > table.mini > tbody > tr > th:first-child,
 .panel > .table-bordered > tbody > tr > td:first-child,
+.calendar-calendar .panel > table.mini > tbody > tr > td:first-child,
 .panel > .table-bordered > tfoot > tr > th:first-child,
+.calendar-calendar .panel > table.mini > tfoot > tr > th:first-child,
 .panel > .table-bordered > tfoot > tr > td:first-child,
+.calendar-calendar .panel > table.mini > tfoot > tr > td:first-child,
 .panel > .table-responsive > .table-bordered > thead > tr > th:first-child,
+.calendar-calendar .panel > .table-responsive > table.mini > thead > tr > th:first-child,
 .panel > .table-responsive > .table-bordered > thead > tr > td:first-child,
+.calendar-calendar .panel > .table-responsive > table.mini > thead > tr > td:first-child,
 .panel > .table-responsive > .table-bordered > tbody > tr > th:first-child,
+.calendar-calendar .panel > .table-responsive > table.mini > tbody > tr > th:first-child,
 .panel > .table-responsive > .table-bordered > tbody > tr > td:first-child,
+.calendar-calendar .panel > .table-responsive > table.mini > tbody > tr > td:first-child,
 .panel > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
-.panel > .table-responsive > .table-bordered > tfoot > tr > td:first-child {
+.calendar-calendar .panel > .table-responsive > table.mini > tfoot > tr > th:first-child,
+.panel > .table-responsive > .table-bordered > tfoot > tr > td:first-child,
+.calendar-calendar .panel > .table-responsive > table.mini > tfoot > tr > td:first-child {
   border-left: 0;
 }
 /* line 158, ../../../../../../../../.rvm/rubies/ruby-2.1.1/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_panels.scss */
-.panel > .table-bordered > thead > tr > th:last-child,
+.panel > .table-bordered > thead > tr > th:last-child, .calendar-calendar .panel > table.mini > thead > tr > th:last-child,
 .panel > .table-bordered > thead > tr > td:last-child,
+.calendar-calendar .panel > table.mini > thead > tr > td:last-child,
 .panel > .table-bordered > tbody > tr > th:last-child,
+.calendar-calendar .panel > table.mini > tbody > tr > th:last-child,
 .panel > .table-bordered > tbody > tr > td:last-child,
+.calendar-calendar .panel > table.mini > tbody > tr > td:last-child,
 .panel > .table-bordered > tfoot > tr > th:last-child,
+.calendar-calendar .panel > table.mini > tfoot > tr > th:last-child,
 .panel > .table-bordered > tfoot > tr > td:last-child,
+.calendar-calendar .panel > table.mini > tfoot > tr > td:last-child,
 .panel > .table-responsive > .table-bordered > thead > tr > th:last-child,
+.calendar-calendar .panel > .table-responsive > table.mini > thead > tr > th:last-child,
 .panel > .table-responsive > .table-bordered > thead > tr > td:last-child,
+.calendar-calendar .panel > .table-responsive > table.mini > thead > tr > td:last-child,
 .panel > .table-responsive > .table-bordered > tbody > tr > th:last-child,
+.calendar-calendar .panel > .table-responsive > table.mini > tbody > tr > th:last-child,
 .panel > .table-responsive > .table-bordered > tbody > tr > td:last-child,
+.calendar-calendar .panel > .table-responsive > table.mini > tbody > tr > td:last-child,
 .panel > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
-.panel > .table-responsive > .table-bordered > tfoot > tr > td:last-child {
+.calendar-calendar .panel > .table-responsive > table.mini > tfoot > tr > th:last-child,
+.panel > .table-responsive > .table-bordered > tfoot > tr > td:last-child,
+.calendar-calendar .panel > .table-responsive > table.mini > tfoot > tr > td:last-child {
   border-right: 0;
 }
 /* line 167, ../../../../../../../../.rvm/rubies/ruby-2.1.1/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_panels.scss */
-.panel > .table-bordered > thead > tr:first-child > td,
+.panel > .table-bordered > thead > tr:first-child > td, .calendar-calendar .panel > table.mini > thead > tr:first-child > td,
 .panel > .table-bordered > thead > tr:first-child > th,
+.calendar-calendar .panel > table.mini > thead > tr:first-child > th,
 .panel > .table-bordered > tbody > tr:first-child > td,
+.calendar-calendar .panel > table.mini > tbody > tr:first-child > td,
 .panel > .table-bordered > tbody > tr:first-child > th,
+.calendar-calendar .panel > table.mini > tbody > tr:first-child > th,
 .panel > .table-responsive > .table-bordered > thead > tr:first-child > td,
+.calendar-calendar .panel > .table-responsive > table.mini > thead > tr:first-child > td,
 .panel > .table-responsive > .table-bordered > thead > tr:first-child > th,
+.calendar-calendar .panel > .table-responsive > table.mini > thead > tr:first-child > th,
 .panel > .table-responsive > .table-bordered > tbody > tr:first-child > td,
-.panel > .table-responsive > .table-bordered > tbody > tr:first-child > th {
+.calendar-calendar .panel > .table-responsive > table.mini > tbody > tr:first-child > td,
+.panel > .table-responsive > .table-bordered > tbody > tr:first-child > th,
+.calendar-calendar .panel > .table-responsive > table.mini > tbody > tr:first-child > th {
   border-bottom: 0;
 }
 /* line 176, ../../../../../../../../.rvm/rubies/ruby-2.1.1/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_panels.scss */
-.panel > .table-bordered > tbody > tr:last-child > td,
+.panel > .table-bordered > tbody > tr:last-child > td, .calendar-calendar .panel > table.mini > tbody > tr:last-child > td,
 .panel > .table-bordered > tbody > tr:last-child > th,
+.calendar-calendar .panel > table.mini > tbody > tr:last-child > th,
 .panel > .table-bordered > tfoot > tr:last-child > td,
+.calendar-calendar .panel > table.mini > tfoot > tr:last-child > td,
 .panel > .table-bordered > tfoot > tr:last-child > th,
+.calendar-calendar .panel > table.mini > tfoot > tr:last-child > th,
 .panel > .table-responsive > .table-bordered > tbody > tr:last-child > td,
+.calendar-calendar .panel > .table-responsive > table.mini > tbody > tr:last-child > td,
 .panel > .table-responsive > .table-bordered > tbody > tr:last-child > th,
+.calendar-calendar .panel > .table-responsive > table.mini > tbody > tr:last-child > th,
 .panel > .table-responsive > .table-bordered > tfoot > tr:last-child > td,
-.panel > .table-responsive > .table-bordered > tfoot > tr:last-child > th {
+.calendar-calendar .panel > .table-responsive > table.mini > tfoot > tr:last-child > td,
+.panel > .table-responsive > .table-bordered > tfoot > tr:last-child > th,
+.calendar-calendar .panel > .table-responsive > table.mini > tfoot > tr:last-child > th {
   border-bottom: 0;
 }
 /* line 183, ../../../../../../../../.rvm/rubies/ruby-2.1.1/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_panels.scss */
@@ -10187,13 +10244,25 @@ body.ctools-modal-open {
   display: block;
 }
 /* line 376, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
-#modal-content .widget-preview {
+#modal-content #panopoly-form-widget-preview {
   width: 50%;
   float: right;
 }
 /* line 379, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
-#modal-content .widget-preview .container, #modal-content .widget-preview body.page-is-not-panel .main, body.page-is-not-panel #modal-content .widget-preview .main {
+#modal-content #panopoly-form-widget-preview .container, #modal-content #panopoly-form-widget-preview body.page-is-not-panel .main, body.page-is-not-panel #modal-content #panopoly-form-widget-preview .main {
   width: auto;
+}
+
+/* line 391, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
+.calendar-calendar table.mini td {
+  border: 1px solid #eeeeee !important;
+  padding: 5px;
+}
+
+/* line 399, ../../extensions/compass_radix/stylesheets/compass_radix/_structure.scss */
+.view-header .date-nav-wrapper h3 {
+  margin-top: 5px !important;
+  margin-bottom: 0;
 }
 
 /* line 10, ../../extensions/compass_radix/stylesheets/compass_radix/_menu.scss */
@@ -10338,6 +10407,12 @@ ul.panels-ipe-linkbar > li {
 /* line 63, ../../extensions/compass_radix/stylesheets/compass_radix/_panel.scss */
 ul.panels-ipe-linkbar > li a {
   margin: 0 !important;
+}
+
+/* line 15, ../../extensions/compass_radix/stylesheets/compass_radix/_view.scss */
+.views-exposed-form .views-submit-button,
+.views-exposed-form .views-reset-button {
+  margin-top: 3px;
 }
 
 /* line 8, ../../extensions/compass_radix/stylesheets/compass_radix/_form.scss */
@@ -11254,6 +11329,12 @@ body.page-with-region-header .main {
   clear: left;
 }
 
+/* line 38, ../sass/partials/_view.scss */
+.view-events .views-row {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
 /* line 7, ../sass/partials/_node.scss */
 .node-featured .pane-node-title .pane-content a {
   font-size: inherit;
@@ -11320,4 +11401,22 @@ body.page-with-region-header .main {
 /* line 76, ../sass/partials/_node.scss */
 .field-name-field-menu-images .field-items .field-item {
   margin-bottom: 18px;
+}
+
+/* line 85, ../sass/partials/_node.scss */
+.node-event .pane-node-body {
+  margin-top: 10px;
+}
+
+/* line 90, ../sass/partials/_node.scss */
+#event-node .panel-pane {
+  margin-bottom: 18px;
+}
+/* line 93, ../sass/partials/_node.scss */
+#event-node .pane-node-field-event-featured-image {
+  padding-left: 0;
+}
+/* line 103, ../sass/partials/_node.scss */
+#event-node .pane-node-body {
+  clear: left;
 }
