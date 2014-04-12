@@ -11207,7 +11207,16 @@ body.page-is-panel .main {
   margin-bottom: 18px;
 }
 
+/* line 8, ../sass/partials/_panel.scss */
+.panel-panel .panel-pane {
+  margin-bottom: 18px;
+}
 /* line 10, ../sass/partials/_panel.scss */
+.panel-panel .panel-pane .panel-pane {
+  margin-bottom: inherit;
+}
+
+/* line 21, ../sass/partials/_panel.scss */
 .layout-1col .panel-pane-region,
 .layout-2col .panel-pane-region {
   background-color: white;
@@ -11217,7 +11226,7 @@ body.page-is-panel .main {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 15, ../sass/partials/_panel.scss */
+/* line 26, ../sass/partials/_panel.scss */
 .layout-1col .panel-pane-region-full-width,
 .layout-2col .panel-pane-region-full-width {
   background-color: #eeeeee;
@@ -11225,7 +11234,7 @@ body.page-is-panel .main {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 18, ../sass/partials/_panel.scss */
+/* line 29, ../sass/partials/_panel.scss */
 .layout-1col .panel-pane-region-header,
 .layout-1col .panel-pane-region-empty,
 .layout-2col .panel-pane-region-header,
@@ -11234,7 +11243,7 @@ body.page-is-panel .main {
   padding-bottom: 0;
 }
 
-/* line 26, ../sass/partials/_panel.scss */
+/* line 37, ../sass/partials/_panel.scss */
 body.page-with-region-header .main {
   padding-top: 0;
 }

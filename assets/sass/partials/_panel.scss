@@ -2,6 +2,17 @@
 // Styles for panels and panes.
 // --------------------------------------------------
 
+// General
+// --------------------------------------------------
+.panel-panel {
+  .panel-pane {
+    margin-bottom: 18px;
+    .panel-pane {
+      margin-bottom: inherit;
+    }
+  }
+}
+
 
 // Layout 1 col
 // --------------------------------------------------
